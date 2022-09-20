@@ -1,21 +1,55 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
 section p.greeting{
-    color: white;
+    color: rgb(245, 245, 245);
     font-size: 3.6rem;
     font-weight: 600;
 }
 section p.name{
     font-size: 4rem;
     font-weight: 700;
-    color: white;
+    color: rgb(245, 245, 245);
 }
 section p.name span{
-    color: var(--blue)
+    color: rgb(var(--main))
 }
 section p.job{
     font-size: 3.6rem;
     font-weight: 600;
-    color: white;
+    color: rgb(245, 245, 245);
 }
 section p.intro{
+    letter-spacing: .12rem;
     color: var(--dark-gray)
+}
+
+.bottom{
+    margin-top: 4rem;
+}
+
+.contact{
+    border: 1px solid rgb(var(--main));
+    color: rgb(var(--main));
+    margin: 0 .2rem;
+    padding: 0.8rem 1.6rem;
+}
+
+.contact:hover{
+    background-color: rgb(var(--main));
+    color: white;
+}
+
+.work{
+    color: white;
+    margin: 0 .2rem;
+    padding: 0.92rem 1.6rem;
+}
+
+.work:hover{
+    background-color: rgb(var(--main), 0.14);
+    padding: 0.92rem 1.6rem;
 }

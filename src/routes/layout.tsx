@@ -1,19 +1,19 @@
 import { component$ } from '@builder.io/qwik';
-import { Intro, Navbar } from '~/components';
+import { Colorful, Intro, Navbar, SideSocial } from '~/components';
 
 export default component$(() => {
   return (
     <>
+      <Colorful/>
       <main>
         <Navbar/>
+        <SideSocial/>
         <div className='main-div'>
           <Intro/>
         </div>
       </main>
       <footer>
-        <a href="https://www.anesdiaf.me" target="_blank">
-          Made with ♡ by Anes Diaf
-        </a>
+        
       </footer>
     </>
   );
