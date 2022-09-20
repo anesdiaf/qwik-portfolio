@@ -1,0 +1,21 @@
+section p.greeting{
+    color: white;
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+section p.name{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+}
+section p.name span{
+    color: var(--blue)
+}
+section p.job{
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: white;
+}
+section p.intro{
+    color: var(--dark-gray)
+}

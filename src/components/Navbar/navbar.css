@@ -1,0 +1,36 @@
+nav{
+    padding: 1.2rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a {
+    text-decoration: none;
+}
+nav a.brand:hover {
+    transform: rotate(6deg);                
+}
+nav ul {
+    display: flex;
+    gap:  1.4rem;
+}
+nav li {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+}
+nav li span {
+    color: var(--blue);
+}
+nav li a:hover {
+    color: var(--blue);
+}
+
+.brand{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+span.brand-colored{
+    color: var(--blue);
+}
