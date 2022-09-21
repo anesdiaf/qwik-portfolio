@@ -52,7 +52,7 @@ export const Navbar = component$(() => {
             const {id, title, icon, url} = link;
             return(
               <a href={url}>
-                <img src={icon} alt={title} width={"64px"} height={"64px"}/>
+                <img src={icon} alt={title} width="128" height="128"/>
               </a>
             )
           })}

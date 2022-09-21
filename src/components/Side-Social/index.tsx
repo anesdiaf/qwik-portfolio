@@ -11,7 +11,7 @@ export const SideSocial = component$(() => {
             const {id, title, url, icon} = link;
             return (
                 <a href={url} target="_blank" rel="noopener noreferrer">
-                    <img src={icon} alt={title} />
+                    <img src={icon} alt={title} width="128" height="128"/>
                 </a>
             )
         })}
