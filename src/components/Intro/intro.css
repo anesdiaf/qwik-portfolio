@@ -1,8 +1,12 @@
 section{
+    width: 100%;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+}
+.container{
+    padding: 0 14%;
 }
 section p.greeting{
     color: rgb(245, 245, 245);
@@ -23,12 +27,17 @@ section p.job{
     color: rgb(245, 245, 245);
 }
 section p.intro{
-    letter-spacing: .12rem;
-    color: var(--dark-gray)
+    letter-spacing: .11rem;
+    color: var(--dark-gray);
+    filter: invert(2);
 }
 
 .bottom{
     margin-top: 4rem;
+}
+
+button{
+    border-radius: .2rem;
 }
 
 .contact{

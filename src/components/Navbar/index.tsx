@@ -6,7 +6,7 @@ export const Navbar = component$(() => {
   
   return (
     <nav>
-      <a href='/' className='brand' 
+      <a href='#' className='brand' 
       onClick$={() => {window.scroll(0,0)}}>
         Anes<span className='brand-colored'>.Dev</span>
       </a>

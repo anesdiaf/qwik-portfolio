@@ -5,36 +5,52 @@
  * the styles in here will be applied to the Document, without any sort of CSS scoping.
  *
  */
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
-:root {
+
+ @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ 
+ :root {
   --black: #171717;
+  --gray: #b1b1b1;
   --dark-gray: #585858;
   --main: 59, 130, 246;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
-  background-color: #fafafa;
+  width: 100%;
   font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   padding: 0;
   margin: 0;
   background-color: var(--black);
 }
 
+::-webkit-scrollbar{
+  background: none;
+  width: 0.6rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: white;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
 main{
+  width: 100%;
+  height: fit-content;
   z-index: 1;
   backdrop-filter: blur(40px);
 }
 
-.main-div{
-  width: 70%;
-  margin: 0 auto;
-}
 
-a, p, h1, h2, h3, h4 {
+a, p, h1, h2, h3, h4, li {
   color: white;
   transition: ease .15s;
   margin: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 button{
@@ -43,5 +59,31 @@ button{
   border: none;
   cursor: pointer;
   transition: ease .2s;
+}
+
+.section-title{
+  display: flex;
+  align-items: center;
+  gap: 0 1.2rem;
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: .2rem 0;
+}
+.section-title::before{
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2px;
+  border-radius: .2rem;
+  background-color: white;
+}
+.section-title::after{
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2px;
+  border-radius: .2rem;
+  background-color: white;
 }
 
