@@ -18,16 +18,20 @@ section{
     align-items: flex-start;
     border-left: 1px solid rgb(var(--main), 0.4);
 }
-.job-list button{
-    font-size: 1.2rem;
+.job{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
     text-align: left;
     width: 8rem;
     height: 3rem;
     color: white;
     border-bottom-right-radius: 0.4rem;
     padding-left: 1rem;
+    cursor: pointer;
+    transition: all ease .2s;
 }
-.job-list button.active{
+.job.active{
     background-color: rgb(var(--main), 0.4);
 }
 
@@ -35,6 +39,16 @@ section{
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
+    animation: fade-in .2s;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
 }
 .role{
     font-size: 1.2rem;

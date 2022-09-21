@@ -38,12 +38,13 @@ section p.intro{
 
 button{
     border-radius: .2rem;
+    margin: 0 .6rem;
 }
 
 .contact{
     border: 1px solid rgb(var(--main));
     color: rgb(var(--main));
-    margin: 0 .2rem;
+
     padding: 0.8rem 1.6rem;
 }
 
@@ -54,7 +55,6 @@ button{
 
 .work{
     color: white;
-    margin: 0 .2rem;
     padding: 0.92rem 1.6rem;
 }
 

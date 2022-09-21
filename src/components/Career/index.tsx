@@ -1,42 +1,36 @@
-import { component$, useStylesScoped$, useStore, useWatch$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$, useStore } from "@builder.io/qwik";
 import CareerStyles from "./career.css?inline";
 import Data from "./Data";
+
+
 export const Career = component$(() => {
 
-  useStylesScoped$(CareerStyles);
+    useStylesScoped$(CareerStyles);
 
-  const State = useStore({
-    index : 0
-  });
-  
-  const { Co, date, role, tasks} = Data[State.index]
-  
-  useWatch$(({ track }) => {
-    track(State, 'index');
+    const State = useStore({
+      index : 0
+    });
 
-    console.log(State.index);
-    
-    
-  });
+    const { date, role, tasks} = Data[State.index]
+  
   
   return (
     <section id="Experience">
       <div className="container">
         <p className="section-title">Where i've worked</p>
         <div className="content">
-            <div onClick$={() => {
-                State.index == 0 ? State.index = 1 : State.index = 0;
-            }} className="job-list">
-                {Data.map(job => {
-                    return(
-                        <button 
-                        className={job.id == State.index ? "active" : "inactive"}
-                        onClick$={() => State.index == 2}>
-                            {job.Co}
-                        </button>
-                    )
-                })}
-            </div>
+                <div className="job-list">
+                    {Data.map(job => {
+                        const {id, Co} = job;
+                        return(
+                            <button
+                            className={id == State.index ? "job active" : "job inactive"}
+                            onClick$={() => {State.index = id}}>
+                                {Co}
+                            </button>
+                        )
+                    })}
+                </div>
             <div className="job-data">
                 <p className="role">{role}</p> 
                 <p className="date">{date}</p> 

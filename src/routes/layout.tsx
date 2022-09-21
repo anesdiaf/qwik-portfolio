@@ -7,14 +7,16 @@ export default component$(() => {
       <Colorful/>
       <main>
         <Navbar/>
-        <SideSocial/>
-        <SideMail/>
         <div className='main-div'>
           <Intro/>
           <About/>
           <Career/>
         </div>
       </main>
+      <div>
+        <SideSocial/>
+        <SideMail/>
+      </div>
       <footer>
         
       </footer>
