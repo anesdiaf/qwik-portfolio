@@ -50,6 +50,7 @@ section{
 .badge{
     text-align: right;
     font-size: 1.2rem;
+    font-weight: 500;
     color:rgba(var(--main), 0.7)
 }
 .project-title{

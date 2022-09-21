@@ -158,15 +158,15 @@ span.brand-colored{
         height: 60vh;
         gap: 1rem;
         box-shadow: 0px 0px 12px 12px var(--darker-gray);
-        transform: translateX(-100%);
+        transform: translateX(-120%);
     }
     .mobile-menu.active{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        width: 60%;
-        height: 70vh;
+        width: 70%;
+        height: 60vh;
         gap: 1rem;
         box-shadow: 0px 0px 12px 12px var(--darker-gray);
     }
