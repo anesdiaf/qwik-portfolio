@@ -17,8 +17,8 @@ export const Intro = component$(() => {
           <p className="intro">I Design & Develop Accessible, Elegant Apps using modern tech stacks.</p>
         </div>
         <div className="bottom">
-          <a href="#Contact"><button className="contact">Get in touch</button></a>
-          <a href="#Work"><button className="work">See my work</button></a>
+          <a href="#Contact"><button className="contact" aria-label="contact-btn">Get in touch</button></a>
+          <a href="#Work"><button className="work" aria-label="work-btn">See my work</button></a>
         </div>
       </div>
     </section>

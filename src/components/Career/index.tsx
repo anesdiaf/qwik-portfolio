@@ -25,7 +25,8 @@ export const Career = component$(() => {
                         return(
                             <button
                             className={id == State.index ? "job active" : "job inactive"}
-                            onClick$={() => {State.index = id}}>
+                            onClick$={() => {State.index = id}}
+                            aria-label="work-title">
                                 {Co}
                             </button>
                         )

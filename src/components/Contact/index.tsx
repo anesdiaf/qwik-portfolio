@@ -17,20 +17,20 @@ export const Contact = component$(() => {
                                 <input type="text" name="name" id="name" />
                             </div>
                             <div>
-                                <label htmlFor="">Email</label>
+                                <label htmlFor="email">Email</label>
                                 <input type="text" name="email" id="email" />
                             </div>
                             <div>
-                                <label htmlFor="">Subject</label>
+                                <label htmlFor="subject">Subject</label>
                                 <input type="text" name="subject" id="subject" />
                             </div>
                         </div>
                         <div className="text-area">
-                            <label htmlFor="">Content</label>
-                            <textarea name="content" id="content" rows={11}></textarea>
+                            <label htmlFor="mail-content">Content</label>
+                            <textarea name="mail-content" id="mail-content" rows={11}></textarea>
                         </div>
                     </div>
-                    <button preventdefault:click className="send-btn">Send</button>
+                    <button preventdefault:click className="send-btn" aria-label="send-mail-btn">Send</button>
                 </form>
             </div>
         </div>

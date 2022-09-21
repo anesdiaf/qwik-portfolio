@@ -6,7 +6,7 @@ import { socialLinks } from "../Side-Social/socialLinks";
 export const Navbar = component$(() => {
   useStylesScoped$(navbarStyles);
   const state = useStore({
-    isMenu: true,
+    isMenu: false,
   }, { recursive: true });
   
   return (
@@ -29,14 +29,18 @@ export const Navbar = component$(() => {
       </ul>
       <button 
       onClick$={() => {state.isMenu = !state.isMenu}} 
-      className={state.isMenu ? "nav-menu close" : "nav-menu open"}>
+      className={state.isMenu ? "nav-menu close" : "nav-menu open"}
+      aria-label="nav-menu-btn">
+
       </button>
       <div className={state.isMenu ? "mobile-menu active" : "mobile-menu inactive"}>
         <div className="mobile-links">
           {navLinks.map(navlink => {
             const {id, title, url} = navlink;
             return(
-              <a href={url}>
+              <a 
+              onClick$={() => {state.isMenu = false}}  
+              href={url}>
                 <span>{id}.</span>
                 {title}
               </a>
@@ -47,7 +51,9 @@ export const Navbar = component$(() => {
           {socialLinks.map(link => {
             const {id, title, icon, url} = link;
             return(
-              <a href={url}><img src={icon} alt={title} /></a>
+              <a href={url}>
+                <img src={icon} alt={title} />
+              </a>
             )
           })}
         </div>
