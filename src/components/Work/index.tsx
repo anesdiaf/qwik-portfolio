@@ -52,7 +52,7 @@ export const Work = component$(() => {
           <p className="title">Other Projects</p>
           <div className="other-projects">
             {otherProjects.map(project => {
-              const {id, title, image, description:desc, techs, link, git_link, direction} = project;
+              const {id, title, description:desc, techs, link, git_link} = project;
               return(
                 <div className="other-project">
                   <div className="upper-section">
