@@ -5,6 +5,8 @@ import { Intro } from "./Intro";
 import { Navbar } from "./Navbar";
 import { SideMail } from "./Side-Mail";
 import { SideSocial } from "./Side-Social";
+import { Work } from "./Work";
+import { Contact } from "./Contact";
 
 
 export{
@@ -14,5 +16,7 @@ export{
     Colorful,
     About,
     SideMail,
-    Career
+    Career,
+    Work,
+    Contact
 }

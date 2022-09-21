@@ -1,0 +1,150 @@
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    padding: 3rem 14%;
+    overflow: hidden;
+}
+.content{
+    margin-top: 3rem;
+}
+.title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+.featured-projects{
+    margin-top: 4rem;
+}
+
+.project-main{
+    width: 100%;
+    height: 24rem;
+    display: grid;
+    grid-template-columns: 100% 50%;
+    grid-auto-flow: row;
+}
+
+.image{
+    position: absolute;
+    width: 50%;
+}
+.image img {
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+.data{
+    width: 28rem;
+    position: relative;
+    left: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-l{
+    align-self: flex-end;
+}
+.badge{
+    text-align: right;
+    font-size: 1.2rem;
+    color:rgba(var(--main), 0.7)
+}
+.project-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.description{
+    width: 26rem;
+    color: white;
+    background-color: rgba(var(--darker-gray), 0.6);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.8rem;
+}
+
+.techs{
+    width: 28rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: .6rem;
+    margin-bottom: 1rem;
+}
+.tech{
+    font-size: 0.9rem;
+    background-color: rgba(var(--darker-gray), 0.6);
+    backdrop-filter: blur(2px);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.links{
+    width: 28rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+}
+
+
+.other-projects{
+    margin-top: 4rem;
+    columns: 3;
+}
+
+.other-project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 1.5rem;
+    background-color: rgba(var(--darker-gray), 0.5);
+    border-radius: .2rem;
+    transition: ease .2s;
+    break-inside: avoid;
+}
+.other-project:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.upper-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.folder-icon{
+    width: 2.6rem;
+}
+.link-icon{
+    width: 1.4rem;
+    transition: ease .2s;
+}
+.link-icon:hover{
+    filter:  invert(27%) sepia(51%) saturate(5278%) hue-rotate(190deg) brightness(90%) contrast(97%);
+}
+
+.bottom-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.sub-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.sub-description{
+    color: var(--gray)
+}
+.sub-techs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-tech{
+    color: var(--gray);
+    filter: brightness(110%);
+    margin: 0;
+}

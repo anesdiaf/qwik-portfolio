@@ -8,10 +8,6 @@ interface NavbarProps {
 
 export const Navbar = component$(() => {
   useStylesScoped$(navbarStyles);
-  
-  const state = useStore({
-    playing : false
-  });
 
 
   return (
@@ -34,11 +30,7 @@ export const Navbar = component$(() => {
             </li>
           )
         })}
-        <p onClick$={() => {
-          state.playing = !state.playing
-        }}>{state.playing ? "Pause" : "Play"}</p>
       </ul>
-      <audio id='audio' src="https://cdn.pixabay.com/download/audio/2022/09/17/audio_e51d19a2b1.mp3?filename=pentatonic-longing-short-theme-120249.mp3"></audio>
     </nav>
   );
 });

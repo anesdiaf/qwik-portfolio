@@ -12,6 +12,7 @@
   --black: #171717;
   --gray: #b1b1b1;
   --dark-gray: #585858;
+  --darker-gray: 38, 38, 38;
   --main: 59, 130, 246;
 }
 
@@ -24,6 +25,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--black);
+  cursor: default;
 }
 
 ::-webkit-scrollbar{
@@ -87,3 +89,9 @@ button{
   background-color: white;
 }
 
+
+footer{
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}

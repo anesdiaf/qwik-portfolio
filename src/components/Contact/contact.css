@@ -1,0 +1,64 @@
+section{
+    width: 100%;
+}
+.container{
+    padding: 6rem 14%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+.inputs{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.inputs div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+label{
+    color: white;
+    font-weight: 500;
+    text-indent: .2rem;
+}
+
+input[type=text] , textarea{
+    font-size: 1.1rem;
+    color: white;
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.4rem;
+    outline: none;
+    padding: .4rem;
+    transition: ease .2s;
+}
+input[type=text]:focus{
+    border: 2px solid rgb(var(--main), 1);
+}
+
+.text-area{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+textarea{
+    width: 100%;
+    transition: ease .2s;
+}
+textarea:hover{
+    border: 2px solid rgb(var(--main), 1);
+}

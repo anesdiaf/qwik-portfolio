@@ -10,7 +10,7 @@ export const SideSocial = component$(() => {
         {socialLinks.map(link => {
             const {id, title, url, icon} = link;
             return (
-                <a href={url} key={id}>
+                <a href={url} target="_blank" rel="noopener noreferrer">
                     <img src={icon} alt={title} />
                 </a>
             )

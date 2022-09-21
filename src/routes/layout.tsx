@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import { About, Career, Colorful, Intro, Navbar, SideMail, SideSocial } from '~/components';
+import { About, Career, Colorful, Contact, Intro, Navbar, SideMail, SideSocial, Work } from '~/components';
 
 export default component$(() => {
   
@@ -12,6 +12,8 @@ export default component$(() => {
           <Intro/>
           <About/>
           <Career/>
+          <Work/>
+          <Contact/>
         </div>
       </main>
       <div>
@@ -19,7 +21,7 @@ export default component$(() => {
         <SideMail/>
       </div>
       <footer>
-        
+        &copy; {new Date().getFullYear()} <a href="http://anesdiaf.me" target="_blank" rel="noopener noreferrer">Anes Diaf</a>
       </footer>
     </>
   );
