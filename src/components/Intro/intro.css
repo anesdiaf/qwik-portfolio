@@ -144,4 +144,15 @@ button{
         color: var(--dark-gray);
         filter: invert(2);
     }
+    .contact{
+        border: 1px solid rgb(var(--main));
+        color: rgb(var(--main));
+    
+        padding: 0.8rem 1.4rem;
+    }
+    
+    .work{
+        color: white;
+        padding: 0.92rem 1.4rem;
+    }
 }

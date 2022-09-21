@@ -51,7 +51,7 @@ export const Navbar = component$(() => {
           {socialLinks.map(link => {
             const {id, title, icon, url} = link;
             return(
-              <a href={url}>
+              <a href={url} target="_blank" rel="noopener noreferrer">
                 <img src={icon} alt={title} width="128" height="128"/>
               </a>
             )

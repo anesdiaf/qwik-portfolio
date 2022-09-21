@@ -193,11 +193,12 @@ span.brand-colored{
         align-items: center;
         background-color: rgb(var(--darker-main));
     }
-    .mobile-socials a{
+    .mobile-socials a img{
         width: 2rem;
         height: 2rem;
         display: flex;
         justify-content: space-evenly;
         padding: 0 .8rem;
     }
+    
 }
