@@ -1,10 +1,7 @@
-import { component$, useStylesScoped$, $, useStore, useRef } from '@builder.io/qwik';
+import { component$, useStylesScoped$, $, useStore } from '@builder.io/qwik';
 import { navLinks } from './links';
 import navbarStyles from "./navbar.css?inline"
 import { socialLinks } from "../Side-Social/socialLinks";
-interface NavbarProps {
-  
-}
 
 export const Navbar = component$(() => {
   useStylesScoped$(navbarStyles);
@@ -13,11 +10,8 @@ export const Navbar = component$(() => {
     scrolled: 0
   }, { recursive: true });
   
-  const nav = useRef()
-
-  )
   return (
-    <nav ref={nav}>
+    <nav>
       <div className="container">
       <a href='#' className='brand' 
       onClick$={() => {window.scroll(0,0)}}>
