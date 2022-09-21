@@ -15,14 +15,15 @@ export default component$(() => {
           <Work/>
           <Contact/>
         </div>
+        <footer>
+          &copy; {new Date().getFullYear()} <a href="http://anesdiaf.me" target="_blank" rel="noopener noreferrer">Anes Diaf</a>
+        </footer>
       </main>
       <div>
         <SideSocial/>
         <SideMail/>
       </div>
-      <footer>
-        &copy; {new Date().getFullYear()} <a href="http://anesdiaf.me" target="_blank" rel="noopener noreferrer">Anes Diaf</a>
-      </footer>
+
     </>
   );
 });

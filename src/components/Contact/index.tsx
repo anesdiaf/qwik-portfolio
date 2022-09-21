@@ -10,24 +10,27 @@ export const Contact = component$(() => {
             <p className="section-title">Contact me</p>
             <div className="content">
                 <form>
-                    <div className="inputs">
-                        <div>
-                            <label htmlFor="name">Name</label>
-                            <input type="text" name="name" id="name" />
+                    <div className='form-container'>
+                        <div className="inputs">
+                            <div>
+                                <label htmlFor="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div>
+                                <label htmlFor="">Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div>
+                                <label htmlFor="">Subject</label>
+                                <input type="text" name="subject" id="subject" />
+                            </div>
                         </div>
-                        <div>
-                            <label htmlFor="">Email</label>
-                            <input type="text" name="email" id="email" />
-                        </div>
-                        <div>
-                            <label htmlFor="">Subject</label>
-                            <input type="text" name="subject" id="subject" />
+                        <div className="text-area">
+                            <label htmlFor="">Content</label>
+                            <textarea name="content" id="content" cols={30} rows={11}></textarea>
                         </div>
                     </div>
-                    <div className="text-area">
-                        <label htmlFor="">Content</label>
-                        <textarea name="content" id="content" cols="30" rows="11"></textarea>
-                    </div>
+                    <button className="send-btn">Send</button>
                 </form>
             </div>
         </div>
