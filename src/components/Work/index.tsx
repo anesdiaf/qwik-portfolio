@@ -1,7 +1,7 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import WorkStyles from "./work.css?inline";
-import FeaturedProjects from "./FeaturedProjects.ts";
-import OtherProjects from "./OtherProjects.ts";
+import FeaturedProjects from "./FeaturedProjects.js";
+import OtherProjects from "./OtherProjects.js";
 
 export const Work = component$(() => {
   useStylesScoped$(WorkStyles);
