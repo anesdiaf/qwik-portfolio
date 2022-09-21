@@ -11,7 +11,11 @@ export const About = component$(() => {
         <p className="section-title">About me</p>
         <div className="content">
           <div className="profile-pic">
-            <img src="https://res.cloudinary.com/anes/image/upload/v1660602699/anes_neicdq.avif" alt="profile-pic" />
+            <img 
+            src="https://res.cloudinary.com/anes/image/upload/v1660602699/anes_neicdq.avif" 
+            alt="profile-pic" 
+            width={"600px"}
+            height={"600px"}/>
           </div>
           <div className="profile-info">
             <p className="resume">{resume}</p>
