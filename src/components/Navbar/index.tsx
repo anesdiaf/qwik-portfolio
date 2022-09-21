@@ -1,4 +1,4 @@
-import { component$, useStylesScoped$, $, useStore, useRef, useOnWindow } from '@builder.io/qwik';
+import { component$, useStylesScoped$, $, useStore, useRef } from '@builder.io/qwik';
 import { navLinks } from './links';
 import navbarStyles from "./navbar.css?inline"
 import { socialLinks } from "../Side-Social/socialLinks";
@@ -15,10 +15,6 @@ export const Navbar = component$(() => {
   
   const nav = useRef()
 
-  useOnWindow('scroll',
-  $(e => {
-      store.scrolled = window.ScrollY;
-  })
   )
   return (
     <nav ref={nav}>
