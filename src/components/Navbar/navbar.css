@@ -1,8 +1,17 @@
 nav{
     position: sticky;
-    width: 80%;
-    left: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
     padding: .6rem 0;
+    z-index: 99;
+    background-color: rgb(var(--black), 0.6);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,4 +45,159 @@ nav li a:hover {
 }
 span.brand-colored{
     color: rgb(var(--main));
+}
+.nav-menu{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    nav{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.6rem 0;
+        margin: 0 auto;
+        background-color: rgb(var(--black), 0.6);
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        z-index: 999;
+    }
+    nav ul{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        height: 0;
+        padding: 0.2rem 1rem;
+        background-color: white;
+        border-radius: 0.4rem;
+        transition: ease .2s;
+    }
+    .nav-menu::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0.16rem 0.5rem;
+        background-color: white;
+        border-radius: 0.4rem;
+        transform: translateY(0.5rem) translateX(0.5rem);
+        transition: ease .2s;
+    }
+    .nav-menu::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0.16rem 0.5rem;
+        background-color: white;
+        border-radius: 0.4rem;
+        transform: translateY(-0.5rem) translateX(-0.5rem);
+        transition: ease .2s;
+    }
+    .nav-menu.close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        height: 0;
+        padding: 0.2rem 1rem;
+        background-color: white;
+        border-radius: 0.4rem;
+        transition: ease .2s;
+        transform: rotate(-45deg)
+    }
+    .nav-menu.close::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0.2rem 0.5rem;
+        background-color: white;
+        border-radius: 0.4rem;
+        transform: rotate(90deg) translate(0.5rem,0rem);
+    }
+    .nav-menu.close::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0.2rem 0.5rem;
+        background-color: white;
+        border-radius: 0.4rem;
+        transform: rotate(-90deg) translate(0.5rem,0rem);
+    }
+    .mobile-menu{
+        position: fixed;
+        top: 5.5rem;
+        left: 0;
+        background-color: rgb(var(--main));
+        transition: ease .2s;
+        z-index: 10;
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
+        overflow: hidden;
+    }
+    .mobile-menu.inactive{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 60%;
+        height: 60vh;
+        gap: 1rem;
+        box-shadow: 0px 0px 12px 12px var(--darker-gray);
+        transform: translateX(-100%);
+    }
+    .mobile-menu.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 60%;
+        height: 60vh;
+        gap: 1rem;
+        box-shadow: 0px 0px 12px 12px var(--darker-gray);
+    }
+
+    .mobile-links{
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        width: 100%;
+        padding: 2rem 0rem;
+    }
+    .mobile-links a{
+        width: 100%;
+        display: flex;
+        font-size: 1.2rem;
+        padding: 1rem 1.6rem;
+    }
+
+    .mobile-socials{
+        width: 100%;
+        height: 3.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(var(--darker-main));
+    }
+    .mobile-socials a{
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+    }
 }

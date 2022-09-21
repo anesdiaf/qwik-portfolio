@@ -5,9 +5,8 @@ export default component$(() => {
   
   return (
     <>
-      <Colorful/>
+      <Navbar/>
       <main>
-        <Navbar/>
         <div className='main-div'>
           <Intro/>
           <About/>
@@ -23,7 +22,8 @@ export default component$(() => {
         <SideSocial/>
         <SideMail/>
       </div>
-
+      <div className="blurred"></div>
+        <Colorful/>
     </>
   );
 });

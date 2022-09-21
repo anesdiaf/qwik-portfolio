@@ -27,7 +27,7 @@ export const Contact = component$(() => {
                         </div>
                         <div className="text-area">
                             <label htmlFor="">Content</label>
-                            <textarea name="content" id="content" cols={30} rows={11}></textarea>
+                            <textarea name="content" id="content" rows={11}></textarea>
                         </div>
                     </div>
                     <button className="send-btn">Send</button>

@@ -1,27 +1,34 @@
-import { component$, useStylesScoped$, $, PropFunction, useStore } from '@builder.io/qwik';
+import { component$, useStylesScoped$, $, useStore, useRef, useOnWindow } from '@builder.io/qwik';
 import { navLinks } from './links';
 import navbarStyles from "./navbar.css?inline"
-
+import { socialLinks } from "../Side-Social/socialLinks";
 interface NavbarProps {
   
 }
 
 export const Navbar = component$(() => {
   useStylesScoped$(navbarStyles);
+  const state = useStore({
+    isMenu: true,
+    scrolled: 0
+  }, { recursive: true });
+  
+  const nav = useRef()
 
-
+  useOnWindow('scroll',
+  $(e => {
+      store.scrolled = window.ScrollY;
+  })
+  )
   return (
-    <nav>
+    <nav ref={nav}>
+      <div className="container">
       <a href='#' className='brand' 
       onClick$={() => {window.scroll(0,0)}}>
-        Anes<span className='brand-colored'>.Dev</span>
+        Anes<span className='brand-colored'>.Dev {state.scrolled}</span>
       </a>
       <ul>
         {navLinks.map(navlink => {
-          //const id: number = navlink.id;
-          //const title: string = navlink.title;
-          //const url: string = navlink.url;
-
           const {id, title, url} = navlink;
           return(
             <li>
@@ -31,6 +38,32 @@ export const Navbar = component$(() => {
           )
         })}
       </ul>
+      <button 
+      onClick$={() => {state.isMenu = !state.isMenu}} 
+      className={state.isMenu ? "nav-menu close" : "nav-menu open"}>
+      </button>
+      <div className={state.isMenu ? "mobile-menu active" : "mobile-menu inactive"}>
+        <div className="mobile-links">
+          {navLinks.map(navlink => {
+            const {id, title, url} = navlink;
+            return(
+              <a href={url}>
+                <span>{id}.</span>
+                {title}
+              </a>
+            )
+          })}
+        </div>
+        <div className="mobile-socials">
+          {socialLinks.map(link => {
+            const {id, title, icon, url} = link;
+            return(
+              <a href={url}><img src={icon} alt={title} /></a>
+            )
+          })}
+        </div>
+      </div>
+      </div>
     </nav>
   );
 });

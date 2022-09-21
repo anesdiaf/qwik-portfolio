@@ -113,3 +113,43 @@ ul p:hover {
     cursor: default;
     color: white;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        padding: 3rem 20%;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .profile-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .container{
+        padding: 3rem 8%;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .profile-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

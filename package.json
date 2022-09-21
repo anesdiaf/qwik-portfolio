@@ -16,7 +16,7 @@
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
-    "start": "vite --open --mode ssr",
+    "start": "vite --open --mode ssr --host",
     "qwik": "qwik",
     "build.server": "vite build --ssr src/entry.netlify-edge.tsx",
     "serve": "netlify dev"

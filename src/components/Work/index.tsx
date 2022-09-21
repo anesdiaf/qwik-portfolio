@@ -11,7 +11,7 @@ export const Work = component$(() => {
     <section id="Work">
       <div className="container">
         <p className="section-title">my works</p>
-        <div className="content">
+
             <p className="title">Featured Projects</p>
                   <div className="featured-projects">
                     {featuredProjets.map(project => {
@@ -80,7 +80,6 @@ export const Work = component$(() => {
             })}
           </div>
         </div>
-      </div>
     </section>
   );
 });

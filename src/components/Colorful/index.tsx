@@ -7,10 +7,10 @@ export const Colorful = component$(() => {
     useStylesScoped$(ColorfulStyles);
 
   return (
-    <div>
-      <div className="spot-1"></div>
-      <div className="spot-2"></div>
-      <div className="spot-3"></div>
-    </div>
+      <div>
+        <div className="spot-1"></div>
+        <div className="spot-2"></div>
+        <div className="spot-3"></div>
+      </div>
   );
 });

@@ -8,23 +8,20 @@ section{
 .container{
     padding: 0 14%;
 }
-section p.greeting{
+section p.greeting, .job{
     color: rgb(245, 245, 245);
     font-size: 3.6rem;
     font-weight: 600;
+    transition: ease .2s;
 }
 section p.name{
     font-size: 4rem;
     font-weight: 700;
     color: rgb(245, 245, 245);
+    transition: ease .2s;
 }
 section p.name span{
     color: rgb(var(--main))
-}
-section p.job{
-    font-size: 3.6rem;
-    font-weight: 600;
-    color: rgb(245, 245, 245);
 }
 section p.intro{
     letter-spacing: .11rem;
@@ -38,7 +35,7 @@ section p.intro{
 
 button{
     border-radius: .2rem;
-    margin: 0 .6rem;
+    margin: 0 .4rem;
 }
 
 .contact{
@@ -61,4 +58,90 @@ button{
 .work:hover{
     background-color: rgb(var(--main), 0.14);
     padding: 0.92rem 1.6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        padding: 0 16%;
+    }
+    section p.greeting, .job{
+        color: rgb(245, 245, 245);
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    section p.name{
+        font-size: 3.8rem;
+        font-weight: 700;
+        color: rgb(245, 245, 245);
+    }
+    section p.intro{
+        text-align: justify;
+        letter-spacing: .11rem;
+        color: var(--dark-gray);
+        filter: invert(2);
+    }
+}
+@media only screen and (max-width: 930px) {
+    .container{
+        padding: 0 16%;
+    }
+    section p.greeting, .job{
+        color: rgb(245, 245, 245);
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+    section p.name{
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: rgb(245, 245, 245);
+    }
+    section p.intro{
+        text-align: justify;
+        letter-spacing: .11rem;
+        color: var(--dark-gray);
+        filter: invert(2);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        padding: 0 14%;
+    }
+    section p.greeting, .job{
+        color: rgb(245, 245, 245);
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    section p.name{
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: rgb(245, 245, 245);
+    }
+    section p.intro{
+        text-align: justify;
+        letter-spacing: .11rem;
+        color: var(--dark-gray);
+        filter: invert(2);
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container{
+        padding: 0 8%;
+    }
+    section p.greeting, .job{
+        color: rgb(245, 245, 245);
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    section p.name{
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgb(245, 245, 245);
+    }
+    section p.intro{
+        text-align: justify;
+        letter-spacing: .11rem;
+        color: var(--dark-gray);
+        filter: invert(2);
+    }
 }

@@ -6,10 +6,6 @@ section{
 }
 
 .content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 3rem;
 }
 
@@ -61,10 +57,10 @@ input[type=text]:focus{
     gap: 0.4rem;
 }
 textarea{
-    width: 100%;
+    width: 96%;
     transition: ease .2s;
 }
-textarea:hover{
+textarea:focus{
     border: 2px solid rgb(var(--main), 1);
 }
 
@@ -78,4 +74,29 @@ textarea:hover{
 }
 .send-btn:hover{
     background-color: rgb(var(--main), 0.6);
+}
+
+
+@media only screen and (max-width: 640px) {
+    .container{
+        padding: 6rem 8%;
+    }
+    .form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .inputs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+    .text-area{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
 }

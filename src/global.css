@@ -9,11 +9,12 @@
  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
  
  :root {
-  --black: #171717;
+  --black: 23, 23, 23;
   --gray: #b1b1b1;
   --dark-gray: #585858;
   --darker-gray: 38, 38, 38;
   --main: 59, 130, 246;
+  --darker-main: 45, 113, 224;
 }
 
 html{
@@ -24,7 +25,7 @@ body {
   font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   padding: 0;
   margin: 0;
-  background-color: var(--black);
+  background-color: rgb(var(--black));
   cursor: default;
 }
 
@@ -42,8 +43,16 @@ body {
 main{
   width: 100%;
   height: fit-content;
-  z-index: 1;
+}
+
+.blurred{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   backdrop-filter: blur(40px);
+  z-index: -50;
 }
 
 
