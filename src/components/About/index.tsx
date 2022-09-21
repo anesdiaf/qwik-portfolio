@@ -14,8 +14,8 @@ export const About = component$(() => {
             <img 
             src="https://res.cloudinary.com/anes/image/upload/v1660602699/anes_neicdq.avif" 
             alt="profile-pic" 
-            width={"600px"}
-            height={"600px"}/>
+            width="600"
+            height="600"/>
           </div>
           <div className="profile-info">
             <p className="resume">{resume}</p>
