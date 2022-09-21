@@ -7,7 +7,6 @@ export const Navbar = component$(() => {
   useStylesScoped$(navbarStyles);
   const state = useStore({
     isMenu: true,
-    scrolled: 0
   }, { recursive: true });
   
   return (
@@ -15,7 +14,7 @@ export const Navbar = component$(() => {
       <div className="container">
       <a href='#' className='brand' 
       onClick$={() => {window.scroll(0,0)}}>
-        Anes<span className='brand-colored'>.Dev {state.scrolled}</span>
+        Anes<span className='brand-colored'>.Dev</span>
       </a>
       <ul>
         {navLinks.map(navlink => {

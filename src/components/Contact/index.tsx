@@ -30,7 +30,7 @@ export const Contact = component$(() => {
                             <textarea name="content" id="content" rows={11}></textarea>
                         </div>
                     </div>
-                    <button className="send-btn">Send</button>
+                    <button preventdefault:click className="send-btn">Send</button>
                 </form>
             </div>
         </div>
