@@ -18,7 +18,13 @@ export const About = component$(() => {
             height="600"/>
           </div>
           <div className="profile-info">
-            <p className="resume">{resume}</p>
+            <p className="resume">
+              Hello, My name is Anes Diaf, I'm a developer who likes solving problems and create solutions. I started to programming back in 2014, With C# i learned the basics of programming.
+              <br/>
+              <br/>Then i started learning about Web development (HTML, CSS, Javascript & PHP).
+              <br/>
+              <br/>In 2018 i've started working with D15 (Ecommerce Company) where i gained a lot of experience and knowledge.
+            </p>
             <div className="skills">
               <p>These Are the technologies i'm using now :</p>
               <div>
